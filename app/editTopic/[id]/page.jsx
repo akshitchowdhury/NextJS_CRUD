@@ -1,3 +1,6 @@
+//client side logi to edit a topic ; so we import EditTopicForm component and create the logic and send props to the comp
+
+
 import EditTopicForm from "@/components/EditTopicForm";
 
 const getTopicById = async (id) => {
