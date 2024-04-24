@@ -12,6 +12,7 @@ const getTopics = async ()=>{
 
     // cache: "no-store" because we want to recieve new updated topic list every time we fetch/get
 
+    console.log(res)
     if(!res.ok){
         throw new Error("Failed to fetch topics")
     }
