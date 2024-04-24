@@ -27,7 +27,7 @@ export default function AddTopic(){
 
         try {
 
-           const res =  await fetch("http://localhost:3000/api/topics", 
+           const res =  await fetch("${process.env.API_URL}api/topics", 
         {
             //since this is a post request i.e adding data to db we add the following paramtr as necessity
             method: "POST", //type of method
