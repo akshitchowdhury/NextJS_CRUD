@@ -1,4 +1,6 @@
+
 /** @type {import('next').NextConfig} */
+require ('dotenv').config()
 const nextConfig = {
     env : {
         MONGODB_URI: "mongodb+srv://akshitchowdhury:akshitchowdhury@cluster0.ywftldt.mongodb.net/next_crud_db",
