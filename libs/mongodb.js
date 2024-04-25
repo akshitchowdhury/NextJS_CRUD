@@ -7,9 +7,8 @@ dotenv.config()
 
 const connectMongoDb = async ()=>{
     try {
-        console.log(process.env.NEXT_PUBLIC_MONGO_URI)
-       await mongoose.connect(`${process.env.NEXT_PUBLIC_MONGODB_URI}`,
-       { useNewUrlParser: true, useUnifiedTopology: true })
+        
+       await mongoose.connect(`${process.env.NEXT_PUBLIC_MONGODB_URI}`)
         console.log("connected to Mongo DB")
     } catch (error) {
         console.log(error)
