@@ -10,7 +10,6 @@ const getTopics = async ()=>{
       const res =  await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/topics`,
     {cache: 'no-store'})
 
-    // cache: "no-store" because we want to recieve new updated topic list every time we fetch/get
 
     console.log(res)
     if(!res.ok){
